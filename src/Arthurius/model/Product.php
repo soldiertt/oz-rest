@@ -20,7 +20,29 @@ class Product extends Entity
         ORDER BY name desc
 EOD;
 
-    public static function findByCategory($category) {
+    public static $SQL_SEARCH = <<<'EOD'
+        SELECT id, ref, marque, name, description, picture, manche, acier, size, promo, price, piece
+        FROM product
+        WHERE marque like ? OR name like ? OR description like ? or manche like ?
+EOD;
+
+    public static function findByCategory($category)
+    {
         return self::queryList(self::$SQL_FIND_BY_CATEGORY, [$category]);
+    }
+
+    public static function search($term)
+    {
+        $term = "%$term%";
+        return self::queryList(self::$SQL_SEARCH, [$term, $term, $term, $term]);
+    }
+
+    public static function debug_to_console($data)
+    {
+        if (is_array($data) || is_object($data)) {
+            echo("<script>console.log('PHP: " . json_encode($data) . "');</script>");
+        } else {
+            echo("<script>console.log('PHP: " . $data . "');</script>");
+        }
     }
 }
