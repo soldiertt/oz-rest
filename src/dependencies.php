@@ -21,7 +21,7 @@ $container['logger'] = function ($c) {
 //Override the default Not Found Handler
 $container['notFoundHandler'] = function ($c) {
     return function ($request, $response) use ($c) {
-        $jsonResp = new \Arthurius\JsonResponse(true, "Could not find matching route");
+        $jsonResp = new \Oz\JsonResponse(true, "Could not find matching route");
         return $c['response']
         ->withStatus(404)
         ->withHeader('Content-Type', 'application/json')

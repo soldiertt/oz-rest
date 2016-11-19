@@ -6,16 +6,16 @@
  * Time: 15:59
  */
 
-namespace Arthurius;
+namespace Oz;
 
 
 class App
 {
 
-    const DB_HOST = 'localhost';
-    const DB_NAME = 'arthuriu';
+    const DB_HOST = 'mysql';
+    const DB_NAME = 'oz';
     const DB_USER = 'root';
-    const DB_PASS = 'UeyK7b45';
+    const DB_PASS = 'fizzye';
 
     private static $database;
 

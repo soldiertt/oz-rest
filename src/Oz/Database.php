@@ -6,7 +6,7 @@
  * Time: 15:20
  */
 
-namespace Arthurius;
+namespace Oz;
 
 use \PDO;
 
@@ -27,7 +27,7 @@ class Database
 
     public function getPDO() {
         if ($this->pdo === null) {
-            $pdo = new PDO("mysql:host=" . $this->dbhost . ";dbname=" . $this->dbname . ";charset=utf8", $this->dbuser, $this->dbpass);//"UeyK7b45"
+            $pdo = new PDO("mysql:host=" . $this->dbhost . ";dbname=" . $this->dbname . ";charset=utf8", $this->dbuser, $this->dbpass);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->pdo = $pdo;
         }
@@ -35,16 +35,26 @@ class Database
     }
 
     public function queryOne($sql, $className, $attributes = null) {
-        $stmt = $this->getStatement($sql, $className, $attributes);
+        $stmt = $this->getReadStatement($sql, $className, $attributes);
         return $stmt->fetch();
     }
 
     public function queryList($sql, $className, $attributes = null) {
-        $stmt = $this->getStatement($sql, $className, $attributes);
+        $stmt = $this->getReadStatement($sql, $className, $attributes);
         return $stmt->fetchAll();
     }
 
-    private function getStatement($sql, $className, $attributes) {
+    public function execute($sql, $attributes = null) {
+        $ok = $this->getExecStatement($sql, $attributes);
+        if ($ok) {
+            $id = $this->getPDO()->lastInsertId();
+            return $id;
+        } else {
+            return null;
+        }
+    }
+
+    private function getReadStatement($sql, $className, $attributes) {
         $stmt = $this->getPDO()->prepare($sql);
         if ($attributes != null) {
             $stmt->execute($attributes);
@@ -53,5 +63,14 @@ class Database
         }
         $stmt->setFetchMode(PDO::FETCH_CLASS, $className);
         return $stmt;
+    }
+
+    private function getExecStatement($sql, $attributes) {
+        $stmt = $this->getPDO()->prepare($sql);
+        if ($attributes != null) {
+            return $stmt->execute($attributes);
+        } else {
+            return $stmt->execute();
+        }
     }
 }

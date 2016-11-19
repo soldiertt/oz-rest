@@ -6,9 +6,9 @@
  * Time: 16:25
  */
 
-namespace Arthurius\model;
+namespace Oz\model;
 
-use \Arthurius\App;
+use \Oz\App;
 
 class Entity
 {
@@ -28,5 +28,9 @@ class Entity
 
     public static function queryList($statement, $attributes = null) {
         return App::getDb()->queryList($statement, get_called_class(), $attributes);
+    }
+
+    public static function execute($statement, $attributes = null) {
+        return App::getDb()->execute($statement, $attributes);
     }
 }
