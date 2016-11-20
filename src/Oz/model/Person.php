@@ -11,6 +11,15 @@ namespace Oz\model;
 
      public static $table = "person";
 
+     public static $SQL_SELECT_ALL = <<<'EOD'
+        SELECT person.id, pnr, firstname, lastname, birthdate, ssin, badge, photo, priv_phone,
+            work_phone, medical_examination_date, rescuer, grade.value as grade_value,
+            brigade.value as brigade_value, security_function.value as security_function_value
+        FROM person INNER JOIN grade ON person.grade_id = grade.id
+                    INNER JOIN brigade ON person.brigade_id = brigade.id
+                    INNER JOIN security_function ON person.security_function_id = security_function.id
+EOD;
+
      public static $SQL_INSERT = <<<'EOD'
         INSERT INTO person (pnr, firstname, lastname, birthdate, ssin, badge, photo, priv_phone,
             work_phone, medical_examination_date, rescuer, grade_id, brigade_id, security_function_id)
@@ -28,7 +37,7 @@ EOD;
 EOD;
 
      public static function findAll() {
-         return self::queryList("SELECT * FROM ".static::$table);
+         return self::queryList(self::$SQL_SELECT_ALL);
      }
 
      public static function find($id) {
@@ -39,9 +48,10 @@ EOD;
          $rescuerBool = $person['rescuer'] ? 1 : 0;
          // 1. CREATE PERSON
          $id = self::execute(self::$SQL_INSERT, [$person['pnr'], $person['firstname'], $person['lastname'],
-            $person['birthdate'], $person['ssin'], $person['badge'], $person['photo'], $person['priv_phone'],
-            $person['work_phone'], $person['medical_examination_date'], $rescuerBool, $person['grade'],
-            $person['brigade'], $person['security_function']]);
+             $person['birthdate'], $person['ssin'], $person['badge'], self::optional($person['photo']),
+             self::optional($person['priv_phone']), self::optional($person['work_phone']),
+             self::optional($person['medical_examnation_date']), self::boolean($person['rescuer']),
+             $person['grade'], $person['brigade'], $person['security_function']]);
          if ($id != null) {
              // 2. CREATE CERTIFICATIONS
              $certifications = $person['certifications'];
@@ -61,4 +71,11 @@ EOD;
          }
      }
 
+     private static function optional($value) {
+         return $value ? $value : null;
+     }
+
+     private static function boolean($value) {
+         return $value ? 1 : 0;
+     }
  }

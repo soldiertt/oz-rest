@@ -3,6 +3,7 @@
 
 use Oz\model\Person;
 use Oz\model\Holiday;
+use Oz\model\Common;
 
 /* PERSON */
 $app->get('/person', function ($request, $response, $args) {
@@ -46,4 +47,34 @@ $app->get('/holiday', function ($request, $response, $args) {
     return $response->withStatus(200)
     ->withHeader('Content-Type', 'application/json')
     ->write(json_encode($holidays));
+});
+
+/* GRADE */
+$app->get('/grade', function ($request, $response, $args) {
+    $this->logger->info("Slim-Skeleton '/grade");
+    $grades = Common::findAllGrade();
+
+    return $response->withStatus(200)
+    ->withHeader('Content-Type', 'application/json')
+    ->write(json_encode($grades));
+});
+
+/* BRIGADE */
+$app->get('/brigade', function ($request, $response, $args) {
+    $this->logger->info("Slim-Skeleton '/brigade");
+    $brigades = Common::findAllBrigade();
+
+    return $response->withStatus(200)
+    ->withHeader('Content-Type', 'application/json')
+    ->write(json_encode($brigades));
+});
+
+/* CERTIFICATION */
+$app->get('/certification', function ($request, $response, $args) {
+    $this->logger->info("Slim-Skeleton '/certification");
+    $certifications = Common::findAllCertification();
+
+    return $response->withStatus(200)
+    ->withHeader('Content-Type', 'application/json')
+    ->write(json_encode($certifications));
 });
