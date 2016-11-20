@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2592a8ea-cf1c-4868-9c7a-7cecd504a48c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Oz/model/Common.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Oz/model/Boolean.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Oz/model/Common.php" afterPath="$PROJECT_DIR$/src/Oz/model/Common.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Oz/model/Person.php" afterPath="$PROJECT_DIR$/src/Oz/model/Person.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/middleware.php" afterPath="$PROJECT_DIR$/src/middleware.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes.php" afterPath="$PROJECT_DIR$/src/routes.php" />
@@ -29,25 +30,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Person.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Oz/model/Person.php">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5">
-              <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.909894">
+              <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
               <folding>
-                <marker date="1479648759447" expanded="true" signature="1553:1598" placeholder="SELECT * FRO..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Holiday.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Oz/model/Holiday.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <marker date="1479553388253" expanded="true" signature="256:270" placeholder="SELECT * FRO..." />
+                <element signature="e#17#37#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,25 +45,37 @@
       <file leaf-file-name="Common.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Oz/model/Common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="-16.538462">
+              <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
               <folding>
-                <marker date="1479653953631" expanded="true" signature="221:240" placeholder="SELECT * FRO..grade$..." />
-                <marker date="1479653953631" expanded="true" signature="329:350" placeholder="SELECT * FRO..brigade..." />
-                <marker date="1479653953631" expanded="true" signature="445:472" placeholder="SELECT * FRO..certification..." />
+                <marker date="1479675455064" expanded="true" signature="221:240" placeholder="SELECT * FRO..grade..." />
+                <marker date="1479675455064" expanded="true" signature="329:350" placeholder="SELECT * FRO..brigade..." />
+                <marker date="1479675455064" expanded="true" signature="445:472" placeholder="SELECT * FRO..certification..." />
+                <marker date="1479675455064" expanded="true" signature="565:590" placeholder="SELECT * FRO..work_regime..." />
+                <marker date="1479675455064" expanded="true" signature="678:714" placeholder="SELECT pnr F..person..." />
+                <marker date="1479675455064" expanded="true" signature="814:854" placeholder="SELECT badge..person..." />
+                <marker date="1479675455064" expanded="true" signature="953:991" placeholder="SELECT ssin ..person..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/routes.php">
+      <file leaf-file-name="Boolean.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Oz/model/Boolean.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.5918728">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-              <folding>
-                <element signature="e#17#37#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/app.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4951" column="46" selection-start-line="4758" selection-start-column="45" selection-end-line="4758" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,7 +84,17 @@
         <entry file="file://$PROJECT_DIR$/src/middleware.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-3.2692308">
-              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+              <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Oz/Database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.076923">
+              <caret line="25" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -109,6 +120,7 @@
         <option value="$PROJECT_DIR$/src/Oz/Database.php" />
         <option value="$PROJECT_DIR$/src/middleware.php" />
         <option value="$PROJECT_DIR$/src/Oz/model/Person.php" />
+        <option value="$PROJECT_DIR$/src/Oz/model/Boolean.php" />
         <option value="$PROJECT_DIR$/src/Oz/model/Common.php" />
         <option value="$PROJECT_DIR$/src/routes.php" />
       </list>
@@ -138,7 +150,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -169,6 +181,88 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="oz-rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oz-rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oz-rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oz-rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oz-rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Oz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oz-rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oz-rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Oz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oz-rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oz-rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oz-rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oz-rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -301,12 +395,12 @@
       <option name="number" value="Default" />
       <updated>1479552017956</updated>
       <workItem from="1479552019176" duration="10385000" />
-      <workItem from="1479643945687" duration="5768000" />
+      <workItem from="1479643945687" duration="12368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16153000" />
+    <option name="totallyTimeSpent" value="22753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -321,7 +415,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -358,7 +452,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479648759447" expanded="true" signature="1553:1598" placeholder="SELECT * FRO..." />
+            <marker date="1479673052530" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>
@@ -382,6 +476,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30088496">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -393,36 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23539823">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/app.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56852794">
-          <caret line="4777" column="46" selection-start-line="4758" selection-start-column="45" selection-end-line="4758" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Oz/model/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84247786">
-          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Oz/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1153846">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dependencies.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.038462">
@@ -430,50 +495,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Oz/model/Holiday.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1479553388253" expanded="true" signature="256:270" placeholder="SELECT * FRO..." />
-          </folding>
+        <state vertical-scroll-proportion="0.24734983">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/middleware.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/app.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4951" column="46" selection-start-line="4758" selection-start-column="45" selection-end-line="4758" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Oz/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="25" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Oz/model/Holiday.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4204947">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1479553388253" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Oz/model/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8409894">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+          <folding>
+            <marker date="1479558726334" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1479558726334" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Oz/model/Person.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5">
-          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.6307421">
+          <caret line="65" column="119" selection-start-line="65" selection-start-column="119" selection-end-line="65" selection-end-column="119" />
           <folding>
-            <marker date="1479648759447" expanded="true" signature="1553:1598" placeholder="SELECT * FRO..." />
+            <marker date="1479673052530" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Oz/model/Boolean.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Oz/model/Common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state vertical-scroll-proportion="-16.538462">
+          <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
           <folding>
-            <marker date="1479653953631" expanded="true" signature="221:240" placeholder="SELECT * FRO..grade$..." />
-            <marker date="1479653953631" expanded="true" signature="329:350" placeholder="SELECT * FRO..brigade..." />
-            <marker date="1479653953631" expanded="true" signature="445:472" placeholder="SELECT * FRO..certification..." />
+            <marker date="1479675455064" expanded="true" signature="221:240" placeholder="SELECT * FRO..grade..." />
+            <marker date="1479675455064" expanded="true" signature="329:350" placeholder="SELECT * FRO..brigade..." />
+            <marker date="1479675455064" expanded="true" signature="445:472" placeholder="SELECT * FRO..certification..." />
+            <marker date="1479675455064" expanded="true" signature="565:590" placeholder="SELECT * FRO..work_regime..." />
+            <marker date="1479675455064" expanded="true" signature="678:714" placeholder="SELECT pnr F..person..." />
+            <marker date="1479675455064" expanded="true" signature="814:854" placeholder="SELECT badge..person..." />
+            <marker date="1479675455064" expanded="true" signature="953:991" placeholder="SELECT ssin ..person..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5918728">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.909894">
+          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
           <folding>
             <element signature="e#17#37#0#PHP" expanded="true" />
           </folding>

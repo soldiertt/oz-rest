@@ -78,3 +78,43 @@ $app->get('/certification', function ($request, $response, $args) {
     ->withHeader('Content-Type', 'application/json')
     ->write(json_encode($certifications));
 });
+
+/* WORK REGIMES */
+$app->get('/work_regime', function ($request, $response, $args) {
+    $this->logger->info("Slim-Skeleton '/work_regime");
+    $workRegimes = Common::findAllWorkRegimes();
+
+    return $response->withStatus(200)
+    ->withHeader('Content-Type', 'application/json')
+    ->write(json_encode($workRegimes));
+});
+
+/* Unique PNR */
+$app->get('/unique/pnr/{val}', function ($request, $response, $args) {
+    $value = $request->getAttribute('val');
+    $this->logger->info("Slim-Skeleton '/unique/pnr/".$value);
+    $pnr = Common::findPnr($value);
+    return $response->withStatus(200)
+    ->withHeader('Content-Type', 'application/json')
+    ->write(json_encode(new \Oz\model\Boolean($pnr)));
+});
+
+/* Unique badge */
+$app->get('/unique/badge/{val}', function ($request, $response, $args) {
+    $value = $request->getAttribute('val');
+    $this->logger->info("Slim-Skeleton '/unique/badge/".$value);
+    $badge = Common::findBadge($value);
+    return $response->withStatus(200)
+    ->withHeader('Content-Type', 'application/json')
+    ->write(json_encode(new \Oz\model\Boolean($badge)));
+});
+
+/* Unique ssin */
+$app->get('/unique/ssin/{val}', function ($request, $response, $args) {
+    $value = $request->getAttribute('val');
+    $this->logger->info("Slim-Skeleton '/unique/ssin/".$value);
+    $ssin = Common::findSsin($value);
+    return $response->withStatus(200)
+    ->withHeader('Content-Type', 'application/json')
+    ->write(json_encode(new \Oz\model\Boolean($ssin)));
+});
